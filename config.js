@@ -3,7 +3,7 @@ define(function(require){
 
 	var cordova = require("$UI/system/lib/cordova/cordova");
 	
-	var fileApi = require("$UI/iHome/fileApi");
+	var fileApi = require("$UI/myHome/fileApi");
 	
 	var confFileName = "conf.json";
 	var defConf = [{

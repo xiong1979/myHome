@@ -1,7 +1,7 @@
 define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
-	var configLoader  = require("$UI/iHome/config");
+	var configLoader  = require("$UI/myHome/config");
 	var config;
 	
 	var Model = function(){

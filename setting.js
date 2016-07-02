@@ -3,7 +3,7 @@ define(function(require){
 	require("$UI/system/lib/cordova/cordova");
 	var justep = require("$UI/system/lib/justep");
 
-	var config  = require("$UI/iHome/config");
+	var config  = require("$UI/myHome/config");
 	
 
 	
