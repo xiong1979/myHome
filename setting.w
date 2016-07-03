@@ -12,10 +12,14 @@
     xid="panel1"> 
     <div class="x-panel-top" xid="top1">
       <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar"
-        xid="titleBar1" title="设置" bind-click="titleBar1Click"> 
-        <div class="x-titlebar-left" xid="left1"></div>  
+        xid="titleBar1" title="设置"> 
+        <div class="x-titlebar-left" xid="left1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="button" xid="button3" onClick="{operation:'windowReceiver1.windowCancel'}" icon="icon-android-close">
+   <i xid="i3" class="icon-android-close"></i>
+   <span xid="span3"></span></a></div>  
         <div class="x-titlebar-title" xid="title1">设置</div>  
-        <div class="x-titlebar-right reverse" xid="right1"/>
+        <div class="x-titlebar-right reverse" xid="right1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="确定" xid="okBtn" icon="icon-android-checkmark" onClick="regBtnClick">
+   <i xid="i2" class="icon-android-checkmark"></i>
+   <span xid="span1">确定</span></a></div>
       </div>
     </div>  
     <div class="x-panel-content" xid="content1">
@@ -36,12 +40,9 @@
         <label class="x-label" xid="label4" bind-text='$model.confData.label("fOuterIP")'/>  
         <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="outerIP" placeHolder="例如：104071.cicp.net" dataType="String" bind-ref='$model.confData.ref("fOuterIP")'/>
       </div>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-primary center-block" label="保存" xid="regBtn" onClick="regBtnClick">
-   <i xid="i1"></i>
-   <span xid="span2">保存</span></a>
   </div>  
         
       
     </div>  
     </div>
-</div>
+<span component="$UI/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:316px;left:202px;" onReceive="windowReceiver1Receive"></span></div>

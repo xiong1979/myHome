@@ -45,7 +45,14 @@ define(function(require){
 		
 		var conf = data.toJson().rows;
 		
+		var cur = data.getCurrentRow();
+		
 		config.write(conf);
+		
+		// 确定后返回当前行，用于windowDialog的mapping映射
+
+		var receiver = this.comp("windowReceiver1");
+		receiver.windowEnsure(conf);		
 
 	};
 
@@ -76,6 +83,11 @@ define(function(require){
 		this.loadConfig(this);
 
 	};
+	
+	Model.prototype.windowReceiver1Receive = function(event){
+
+	};
+
 	
 	return Model;
 });
