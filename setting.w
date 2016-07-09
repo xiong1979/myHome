@@ -5,8 +5,8 @@
   <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:316px;left:24px;" onLoad="modelLoad" onActive="modelActive"><div component="$UI/system/components/justep/data/data" autoLoad="false" xid="confData" idColumn="fID"><column label="ID：" name="fID" type="Integer" xid="xid3"></column>
   <column label="用户名称：" name="fName" type="String" xid="xid4"></column>
   <column label="密码：" name="fPassword" type="String" xid="xid5"></column>
-  <column label="内网IP：" name="fInnerIP" type="String" xid="xid6"></column>
-  <column label="外网IP：" name="fOuterIP" type="String" xid="xid7"></column>
+  <column label="内网网址：" name="fInnerIP" type="String" xid="xid6"></column>
+  <column label="外网网址：" name="fOuterIP" type="String" xid="xid7"></column>
   <data xid="default1">[]</data></div></div>  
   <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
     xid="panel1"> 

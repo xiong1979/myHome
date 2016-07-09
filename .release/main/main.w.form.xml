@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cIbqAjq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIbqAjq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cIbqAjq" class="cIbqAjq"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar cIbqAjq" xid="panel3" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIbqAjq"> 
+    <div class="x-panel-content cIbqAjq" xid="Contents" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbqAjq">
+      <iframe src="" xid="WebSite" height="100%" width="100%" scrolling="false" bind-load="WebSiteLoad" frameborder="false" marginheight="0" marginwidth="0" __cid="cIbqAjq" class="cIbqAjq"/>
+    </div>  
+    <div class="x-panel-bottom cIbqAjq" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbqAjq">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cIbqAjq" xid="buttonGroup2" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cIbqAjq">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cIbqAjq" xid="btnSetting" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSettingClick" data-config="{&quot;icon&quot;:&quot;icon-android-settings&quot;,&quot;label&quot;:&quot;设置&quot;}" __cid="cIbqAjq"> 
+          <i xid="i8" class="icon-android-settings cIbqAjq" __cid="cIbqAjq"/>  
+          <span xid="span8" __cid="cIbqAjq" class="cIbqAjq">设置</span>
+        </a>
+      </div>
+    </div>  
+    <style __cid="cIbqAjq" class="cIbqAjq">.x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd87c3cd381cb48e2beb6e70823098ff0-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="setDialog" style="top:255px;left:56px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:setDialogReceived" data-config="{&quot;src&quot;:&quot;$model/UI2/myHome/setting.w&quot;}" __cid="cIbqAjq" class="cIbqAjq">
+    <result concept="confData" operation="new" origin="confData" xid="default8" __cid="cIbqAjq" class="cIbqAjq"> 
+      <mapping from="fID" to="fID" xid="default9" __cid="cIbqAjq" class="cIbqAjq"/>  
+      <mapping from="fName" to="fName" xid="default10" __cid="cIbqAjq" class="cIbqAjq"/>  
+      <mapping from="fPassword" to="fPassword" xid="default11" __cid="cIbqAjq" class="cIbqAjq"/>  
+      <mapping from="fInnerIP" to="fInnerIP" xid="default12" __cid="cIbqAjq" class="cIbqAjq"/>  
+      <mapping from="fOuterIP" to="fOuterIP" xid="default13" __cid="cIbqAjq" class="cIbqAjq"/>
+    </result>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cIbqAjq" __cid="cIbqAjq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cIbqAjq" style="display:none;" __cid="cIbqAjq">
+      <xhtml:div class="x-dialog-title cIbqAjq" __cid="cIbqAjq">
+        <xhtml:button class="close cIbqAjq" __cid="cIbqAjq">
+          <xhtml:span __cid="cIbqAjq" class="cIbqAjq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cIbqAjq" __cid="cIbqAjq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cIbqAjq" __cid="cIbqAjq"/>
+    </xhtml:div>
+  </span>
+</div>

@@ -9,7 +9,7 @@
    <column label="外网IP：" name="fOuterIP" type="String" xid="xid7"></column>
    <data xid="default1">[]</data></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel3" style="height:100%;width:100%;">
-   <div class="x-panel-content" xid="Contents"><iframe src="" xid="WebSite" height="100%" width="100%" scrolling="false"></iframe></div>
+   <div class="x-panel-content" xid="Contents"><iframe src="" xid="WebSite" height="100%" width="100%" scrolling="false" bind-load="WebSiteLoad" frameborder="false" marginheight="0" marginwidth="0"></iframe></div>
    <div class="x-panel-bottom" xid="bottom1"><div component="$UI/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified" tabbed="true" xid="buttonGroup2" style="height:100%;width:100%;"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-icon-top" label="设置" xid="btnSetting" icon="icon-android-settings" onClick="btnSettingClick">
    <i xid="i8" class="icon-android-settings"></i>
    <span xid="span8">设置</span></a></div></div>

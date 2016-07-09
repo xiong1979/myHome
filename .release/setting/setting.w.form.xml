@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciuUvMv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciuUvMv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="ciuUvMv" class="ciuUvMv"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar ciuUvMv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciuUvMv"> 
+    <div class="x-panel-top ciuUvMv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciuUvMv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciuUvMv" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;设置&quot;}" __cid="ciuUvMv"> 
+        <div class="x-titlebar-left ciuUvMv" xid="left1" __cid="ciuUvMv">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciuUvMv" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver1.windowCancel'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciuUvMv"> 
+            <i xid="i3" class="icon-android-close ciuUvMv" __cid="ciuUvMv"/>  
+            <span xid="span3" __cid="ciuUvMv" class="ciuUvMv"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title ciuUvMv" xid="title1" __cid="ciuUvMv">设置</div>  
+        <div class="x-titlebar-right  ciuUvMv" xid="right1" __cid="ciuUvMv">
+          <div class="empty ciuUvMv" __cid="ciuUvMv"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciuUvMv" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;确定&quot;}" __cid="ciuUvMv"> 
+            <i xid="i2" class="icon-android-checkmark ciuUvMv" __cid="ciuUvMv"/>  
+            <span xid="span1" __cid="ciuUvMv" class="ciuUvMv">确定</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ciuUvMv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciuUvMv"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group ciuUvMv" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="ciuUvMv"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 ciuUvMv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciuUvMv"> 
+          <label class="x-label ciuUvMv" xid="label1" bind-text="$model.confData.label(&quot;fName&quot;)" __cid="ciuUvMv"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit ciuUvMv" xid="userName" data-bind="component:{ref:$model.confData.ref(&quot;fName&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入账号&quot;}" __cid="ciuUvMv"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 ciuUvMv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciuUvMv"> 
+          <label class="x-label ciuUvMv" xid="label2" bind-text="$model.confData.label(&quot;fPassword&quot;)" __cid="ciuUvMv"/>  
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit ciuUvMv" xid="password1" type="password" data-bind="component:{ref:$model.confData.ref(&quot;fPassword&quot;),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}" __cid="ciuUvMv"/>
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 ciuUvMv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciuUvMv"> 
+          <label class="x-label ciuUvMv" xid="label3" bind-text="$model.confData.label(&quot;fInnerIP&quot;)" __cid="ciuUvMv"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit ciuUvMv" xid="innerIP" data-bind="component:{ref:$model.confData.ref(&quot;fInnerIP&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例如：192.168.1.100&quot;}" __cid="ciuUvMv"/> 
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 ciuUvMv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciuUvMv"> 
+          <label class="x-label ciuUvMv" xid="label4" bind-text="$model.confData.label(&quot;fOuterIP&quot;)" __cid="ciuUvMv"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit ciuUvMv" xid="outerIP" data-bind="component:{ref:$model.confData.ref(&quot;fOuterIP&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;String&quot;,&quot;placeHolder&quot;:&quot;例如：104071.cicp.net&quot;}" __cid="ciuUvMv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ciuUvMv" class="ciuUvMv">.x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3f271f71d8534b778ed2b504f8f3df6b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:316px;left:202px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="ciuUvMv" class="ciuUvMv"/>
+</div>
