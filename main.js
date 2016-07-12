@@ -2,6 +2,8 @@ define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
 	var configLoader  = require("$UI/myHome/config");
+	
+	require("$UI/system/lib/cordova/cordova");
 	require("cordova!cordova-plugin-http");
 	
 	var Model = function(){
@@ -12,7 +14,7 @@ define(function(require){
 	
 		var data = this.comp("confData");
 		
-		var self = this
+		var self = this;
 		
 		configLoader.read(function(conf){
 			
@@ -31,6 +33,18 @@ define(function(require){
 	
 	Model.prototype.LoadWeb = function(){
 	
+		var webFrame = this.getElementByXid('WebSite');
+		
+//		debugger;
+		
+//		webFrame.src = "";
+//	
+//		webFrame.src	= "http://m.baidu.com";
+//		
+//		webFrame.hidden	= true;
+//		
+//		return;
+//	
 		var data = this.comp("confData").getCurrentRow().toJson();
 		
 		var url = "http://";
@@ -43,70 +57,40 @@ define(function(require){
 		
 		var innerIP = url + data.fInnerIP.value + "/cgi-bin/scada-vis/touch.html";
 		
-		var outerIP = url + data.fOuterIP.value + "/cgi-bin/scada-vis/touch.html";		
+		var outerIP = url + data.fOuterIP.value + "/cgi-bin/scada-vis/touch.html";	
+		
+//		debugger;	
+		
+		webError = function(){
+			alert("内网或者外网地址错误！");
+			webFrame.hidden	= true;	
+			//webFrame.src = "blank.html";		
+		}
 	
-		debugger;
-		
-		var self = this;
-		
-		x5callback = function(){
-			debugger;
-		};
-		
-    cordovaHTTP.get("https://www.baidu.com", {
-	        id: 12,
-	        message: "test"
-		    }, {  }, function(response) {
-		        console.log(response.status);
-		    }, function(response) {
-		        console.error(response.error);
-		    });
-		
-		$.ajax({
-	        type: "GET",
-	        cache: false,
-	        timeout: 1000,
-	        url: innerIP,
-	        processData: false,
-			jsonpCallback: "x5callback",
-			"data" : {
-				"a" : 15,
-				"b" : 10
-			},
-
-	        dataType: "jsonp",
-	        complete: function (XMLHttpRequest, textStatus) {
-	        	debugger;
-	        	if (XMLHttpRequest.status == 200){
-	        	//	debugger;
-	        		self.getElementByXid('WebSite').src	= innerIP;	        		
-	        	}
-	        	else {
-					$.ajax({
-				        type: "GET",
-				        cache: false,
-				        timeout: 5000,
-				        url: outerIP,
-				        data: "{}",
-				        dataType: "jsonp",
-				        complete: function (XMLHttpRequest, textStatus) {
-				        	if (XMLHttpRequest.status == 200){
-				        	//	debugger;
-				        		self.getElementByXid('WebSite').src	= outerIP;	        		
-				        	}
-				        	else {
-				        		self.getElementByXid('WebSite').src = "";
-				        	//	debugger;
-				        	}
-				        }
-			
-					});
-	        	}
-	        }
-
+		cordovaHTTP.get(innerIP, {
+			    id: 12,
+			    message: "test"
+			}, {  }, function(response) {
+				webFrame.hidden	= false;
+			    webFrame.src	= innerIP;
+			}, function(response) {
+				cordovaHTTP.get(outerIP, {
+				        id: 12,
+				        message: "test"
+					}, {  }, function(response) {
+						
+						if (response.data.indexOf("Lyndoo") == -1){
+							webError();
+						}
+						else {
+							webFrame.hidden	= false;
+							webFrame.src	= outerIP;						
+						}					    
+					}, function(response) {
+						webError();						
+				    });
 		});
-	
-
+		
 	
 		
 		//this.getElementByXid('WebSite').src	= url;

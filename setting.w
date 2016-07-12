@@ -29,7 +29,7 @@
           xid="labelEdit1"> 
           <label class="x-label" xid="label1" bind-text='$model.confData.label("fName")'/>  
           <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
-            xid="userName" placeHolder="请输入账号" bind-ref='$model.confData.ref("fName")'/>
+            xid="userName" placeHolder="请输入账号，无帐号不用输入" bind-ref='$model.confData.ref("fName")'/>
         </div>  
         <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit2">
    <label class="x-label" xid="label2" bind-text='$model.confData.label("fPassword")'></label>
